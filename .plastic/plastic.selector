@@ -1,0 +1,3 @@
+repository "enigma-snake/enigma-snake@6871983074565@cloud"
+  path "/"
+    smartbranch "/main"
