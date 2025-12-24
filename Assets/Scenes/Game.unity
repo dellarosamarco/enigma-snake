@@ -387,6 +387,7 @@ MonoBehaviour:
   player: {fileID: 2845401141254209128, guid: f2f749ed30332554097f091a27a34986, type: 3}
   food: {fileID: 5035801792456435845, guid: 03e468321baa79c4b9e31a1788a16f5d, type: 3}
   floor: {fileID: 90163894530665927, guid: 01bceb8d1e94be54190df2b605162a16, type: 3}
+  portal: {fileID: 6246435405705124474, guid: d71eaaae7527a9442826ebcfdd0c8415, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -5,23 +5,20 @@ using System.Collections.Generic;
 public class LevelData
 {
     public string id;
-    public int width;
-    public int height;
-    public int[] cells;
+    public int[][] grid;
 
     public int[,] To2DArray()
     {
-        var grid = new int[this.height, this.width];
+        int h = this.grid.Length;
+        int w = this.grid[0].Length;
 
-        for (int y = 0; y < this.height; y++)
-        {
-            for (int x = 0; x < this.width; x++)
-            {
-                grid[y, x] = cells[y * this.width + x];
-            }
-        }
+        var result = new int[h, w];
 
-        return grid;
+        for (int y = 0; y < h; y++)
+            for (int x = 0; x < w; x++)
+                result[y, x] = this.grid[y][x];
+
+        return result;
     }
 }
 

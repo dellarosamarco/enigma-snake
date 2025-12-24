@@ -180,5 +180,9 @@ public class PlayerMovement : MonoBehaviour
             addBodyPart();
             collider.gameObject.SetActive(false);
         }
+        else if(collider.tag == "Portal")
+        {
+            GameManager.instance.nextLevel();
+        }
     }
 }
